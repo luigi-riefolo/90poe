@@ -49,7 +49,8 @@ protobuf:
 ## Create the Docker image
 docker_image:
 	$(info Creating Docker image)
-	@ docker-compose build --force-rm --no-cache
+	@docker-compose build --force-rm --no-cache
+	@docker tag ${IMAGE_NAME} svc-${SERVICE_NAME}:latest
 
 
 ## Run Docker image
