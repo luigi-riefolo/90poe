@@ -17,7 +17,10 @@ make docker_images
 make docker_run
 ```
 
-## Information
+## Data files
+All the CSV data files are stored in `svc-ingestor/data`.
+
+## Configuration
 The information and configurations for services are located in the respective
 directories.
 
