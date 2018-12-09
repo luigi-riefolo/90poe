@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+// Ingestor Service
+
+package ingestor;
+
+option go_package = "pb";
+
+enum State {
+    UNKNOWN = 0;
+
+    ACTIVE = 1;
+    FAILED = 2;
+    TERMINATED = 3;
+}
+
+// IngestRequest represents the
+// requested local file to ingest
+message IngestRequest {
+    string file_name = 1;
+}
+
+// IngestResponse represents the information
+// and status of the requested ingestor job
+message IngestResponse {
+    string job_id = 1;
+    State state = 2;
+}
+
+// Ingestor defines the API endpoints for the ingestor service.
+service Ingestor {
+
+    // IngestFileHandler processes ingestion requests.
+    rpc IngestFileHandler(IngestRequest) returns (IngestResponse) {}
+}

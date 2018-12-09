@@ -1,0 +1,38 @@
+package: github.com/luigi-riefolo/90poe/svc-storer
+import:
+- package: github.com/golang/protobuf
+  version: v1.2.0
+  subpackages:
+  - proto
+  - ptypes/empty
+- package: github.com/grpc-ecosystem/go-grpc-middleware
+  version: v1.0.0
+  subpackages:
+  - logging/logrus
+  - recovery
+  - tags
+  - tracing/opentracing
+- package: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: v1.2.0
+- package: github.com/joho/godotenv
+  version: v1.3.0
+  subpackages:
+  - autoload
+- package: github.com/kelseyhightower/envconfig
+  version: v1.3.0
+- package: github.com/luigi-riefolo/90poe
+  subpackages:
+  - lib/log
+  - lib/metrics
+  - lib/server
+- package: github.com/pkg/errors
+  version: v0.8.0
+- package: github.com/stretchr/testify
+  version: v1.2.2
+  subpackages:
+  - mock
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: v1.17.0

@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+// Storer Service
+
+package storer;
+
+import "google/protobuf/empty.proto";
+
+option go_package = "pb";
+
+
+// The representation of single user entry.
+message Entry {
+    // @inject_tag: csv:"id"
+    string id = 1;
+
+    // @inject_tag: csv:"name"
+    string name = 2;
+
+    // @inject_tag: csv:"email"
+    string email = 3;
+
+    // @inject_tag: csv:"mobile_number"
+    string mobile_number = 4;
+}
+
+// StoreEntryRequest represents the
+// request for the entry to be stored.
+message StoreEntryRequest {
+    Entry entry = 2;
+}
+
+
+// Storer defines the API endpoints for the storer service.
+service Storer {
+
+    // StoreEntryHandler stores the received entries.
+    rpc StoreEntryHandler(StoreEntryRequest) returns (google.protobuf.Empty) {}
+}

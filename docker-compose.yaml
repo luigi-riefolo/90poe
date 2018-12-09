@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+
+  ingestor:
+    image: $INGESTOR_IMAGE_NAME
+    container_name: $INGESTOR_SERVICE_NAME
+    env_file: svc-ingestor/.env
+    environment:
+    - INGESTOR_DATA_FILE=$INGESTOR_DATA_FILE
+    - STORER_SERVICE_GRPC_HOST=$STORER_SERVICE_NAME
+    networks:
+    - backend
+
+  storer:
+    image: $STORER_IMAGE_NAME
+    container_name: $STORER_SERVICE_NAME
+    env_file: svc-storer/.env
+    networks:
+    - backend
+
+networks:
+  backend:

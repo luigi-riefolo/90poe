@@ -1,0 +1,14 @@
+FROM scratch
+
+ARG SERVICE
+ARG VERSION
+ARG PORT
+
+LABEL service=$SERVICE \
+    version=$VERSION
+
+COPY $SERVICE /
+
+EXPOSE $PORT
+
+ENTRYPOINT [ "/storer" ]
