@@ -25,6 +25,6 @@ directories.
 The two services include unit-tests. Nevertheless the code coverage is still
 too low.
 
-# Note
+## Note
 This project does not use `vgo` introduced in Go 1.11.0. Package dependencies
 are managed using `glide`.
