@@ -25,7 +25,7 @@ ifndef INGESTOR_DATA_FILE
 endif
 
 INGESTOR_SERVICE_NAME := ${SERVICE_NAME}
-INGESTOR_IMAGE_NAME := svc-${SERVICE_NAME}:${VERSION}
+INGESTOR_IMAGE_NAME := svc-${SERVICE_NAME}:latest
 INGESTOR_SERVICE_VERSION := ${VERSION}
 INGESTOR_SERVICE_GRPC_PORT := ${SERVICE_GRPC_PORT}
 
@@ -36,10 +36,14 @@ ifndef VERSION
 	VERSION := undefined
 endif
 STORER_SERVICE_NAME := ${SERVICE_NAME}
-STORER_IMAGE_NAME := svc-${SERVICE_NAME}:${VERSION}
+STORER_IMAGE_NAME := svc-${SERVICE_NAME}:latest
 STORER_SERVICE_VERSION := ${VERSION}
 STORER_SERVICE_GRPC_PORT := ${SERVICE_GRPC_PORT}
 STORER_SERVICE_GRPC_HOST := ${SERVICE_NAME}
+
+
+## Build and run the project
+all: build docker_images docker_run
 
 
 ## Build all the services binaries
@@ -68,4 +72,4 @@ help:
 		printf "\033[36m%-30s\033[0m %s\n", x, a[1]; }' $(MAKEFILE_LIST) | sort
 
 
-.PHONY: docker_images docker_run help
+.PHONY: all docker_images docker_run help

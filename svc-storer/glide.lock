@@ -1,0 +1,170 @@
+hash: ea783ce7b1e13c10c15a93f3c2bf94eb9075dcdf70ae6eea22fef4e2dac266c8
+updated: 2018-12-09T15:53:12.219368489Z
+imports:
+- name: github.com/alecthomas/template
+  version: a0175ee3bccc567396460bf5acd36800cb10c49c
+  subpackages:
+  - parse
+- name: github.com/alecthomas/units
+  version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
+- name: github.com/beorn7/perks
+  version: 3a771d992973f24aa725d07868b467d1ddfceafb
+  subpackages:
+  - quantile
+- name: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- name: github.com/golang/protobuf
+  version: aa810b61a9c79d51363740d207bb46cf8e620ed5
+  subpackages:
+  - jsonpb
+  - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/empty
+  - ptypes/struct
+  - ptypes/timestamp
+- name: github.com/grpc-ecosystem/go-grpc-middleware
+  version: c250d6563d4d4c20252cd865923440e829844f4e
+  subpackages:
+  - logging
+  - logging/logrus
+  - logging/logrus/ctxlogrus
+  - recovery
+  - tags
+  - tags/logrus
+  - tracing/opentracing
+  - util/metautils
+- name: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: c225b8c3b01faf2899099b768856a9e916e5087b
+- name: github.com/joho/godotenv
+  version: 23d116af351c84513e1946b527c88823e476be13
+  subpackages:
+  - autoload
+- name: github.com/kelseyhightower/envconfig
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
+- name: github.com/konsorten/go-windows-terminal-sequences
+  version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/luigi-riefolo/90poe
+  version: 4515bf7dd56c941b21596f96cc028b9e0b3e9f47
+  subpackages:
+  - lib/log
+  - lib/metrics
+  - lib/server
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+  subpackages:
+  - pbutil
+- name: github.com/opentracing/opentracing-go
+  version: 8b5a441dc60e8d9bb9bf9d22060b6d94fa599983
+  subpackages:
+  - ext
+  - log
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/prometheus/client_golang
+  version: 505eaef017263e299324067d40ca2c48f6a2cf50
+  subpackages:
+  - prometheus
+  - prometheus/internal
+  - prometheus/promhttp
+- name: github.com/prometheus/client_model
+  version: 5c3871d89910bfb32f5fcab2aa4b9ec68e65a99f
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: 4724e9255275ce38f7179b2478abeae4e28c904f
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - log
+  - model
+- name: github.com/prometheus/procfs
+  version: 1dc9a6cbc91aacc3e8b2d63db4d2e957a5394ac4
+  subpackages:
+  - internal/util
+  - nfs
+  - xfs
+- name: github.com/sirupsen/logrus
+  version: 93ebe33ece8e0f1a85f1f90db4c87c9ef2e4d2be
+- name: github.com/stretchr/objx
+  version: ef50b0de28773081167c97fc27cf29a0bf8b8c71
+- name: github.com/stretchr/testify
+  version: f35b8ab0b5a2cef36673838d662e249dd9c94686
+  subpackages:
+  - assert
+  - mock
+- name: golang.org/x/crypto
+  version: 505ab145d0a99da450461ae2c1a9f6cd10d1f447
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: 610586996380ceef02dd726cc09df7e00a3f8e56
+  subpackages:
+  - context
+  - http/httpguts
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - trace
+- name: golang.org/x/sys
+  version: ad97f365e15054527b467150f898ec66d7f81e14
+  subpackages:
+  - unix
+  - windows
+  - windows/registry
+  - windows/svc/eventlog
+- name: golang.org/x/text
+  version: 6f44c5a2ea40ee3593d98cdcc905cc1fdaa660e2
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: bd91e49a0898e27abb88c339b432fa53d7497ac0
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: df014850f6dee74ba2fc94874043a9f3f75fbfd8
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - binarylog/grpc_binarylog_v1
+  - codes
+  - connectivity
+  - credentials
+  - credentials/internal
+  - encoding
+  - encoding/proto
+  - grpclog
+  - internal
+  - internal/backoff
+  - internal/binarylog
+  - internal/channelz
+  - internal/envconfig
+  - internal/grpcrand
+  - internal/grpcsync
+  - internal/syscall
+  - internal/transport
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+- name: gopkg.in/alecthomas/kingpin.v2
+  version: 947dcec5ba9c011838740e680966fd7087a71d0d
+testImports: []

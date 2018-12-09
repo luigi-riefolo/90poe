@@ -1,0 +1,42 @@
+package: github.com/luigi-riefolo/90poe/svc-ingestor
+import:
+- package: github.com/gocarina/gocsv
+- package: github.com/golang/protobuf
+  version: v1.2.0
+  subpackages:
+  - proto
+- package: github.com/grpc-ecosystem/go-grpc-middleware
+  version: v1.0.0
+  subpackages:
+  - logging/logrus
+  - recovery
+  - tags
+  - tracing/opentracing
+- package: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: v1.2.0
+- package: github.com/joho/godotenv
+  version: v1.3.0
+  subpackages:
+  - autoload
+- package: github.com/kelseyhightower/envconfig
+  version: v1.3.0
+- package: github.com/luigi-riefolo/90poe
+  subpackages:
+  - lib/log
+  - lib/metrics
+  - lib/server
+  - svc-storer/pb
+- package: github.com/pkg/errors
+  version: v0.8.0
+- package: github.com/ttacon/libphonenumber
+  version: v1.0.1
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: v1.17.0
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  - mock
