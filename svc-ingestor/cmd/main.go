@@ -8,8 +8,8 @@ import (
 	_ "github.com/joho/godotenv/autoload"
 	"github.com/kelseyhightower/envconfig"
 
-	"github.com/luigi-riefolo/90poe/lib/log"
-	ingestor "github.com/luigi-riefolo/90poe/svc-ingestor/api"
+	"github.com/luigi-riefolo/nlp/lib/log"
+	ingestor "github.com/luigi-riefolo/nlp/svc-ingestor/api"
 )
 
 var (

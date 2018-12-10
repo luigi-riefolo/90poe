@@ -12,7 +12,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"google.golang.org/grpc"
 
-	liblog "github.com/luigi-riefolo/90poe/lib/log"
+	liblog "github.com/luigi-riefolo/nlp/lib/log"
 )
 
 var (

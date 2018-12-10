@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/luigi-riefolo/90poe/svc-storer/pb"
+	"github.com/luigi-riefolo/nlp/svc-storer/pb"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,7 +1,7 @@
 package store
 
 import (
-	storerpb "github.com/luigi-riefolo/90poe/svc-storer/pb"
+	storerpb "github.com/luigi-riefolo/nlp/svc-storer/pb"
 )
 
 // Entry represents a user record in a storer.

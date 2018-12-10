@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/luigi-riefolo/90poe/svc-storer/pb"
+	"github.com/luigi-riefolo/nlp/svc-storer/pb"
 )
 
 // StoreEntryHandler saves the received user entry.

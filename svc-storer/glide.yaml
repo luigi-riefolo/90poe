@@ -1,4 +1,4 @@
-package: github.com/luigi-riefolo/90poe/svc-storer
+package: github.com/luigi-riefolo/nlp/svc-storer
 import:
 - package: github.com/golang/protobuf
   version: v1.2.0
@@ -20,7 +20,7 @@ import:
   - autoload
 - package: github.com/kelseyhightower/envconfig
   version: v1.3.0
-- package: github.com/luigi-riefolo/90poe
+- package: github.com/luigi-riefolo/nlp
   subpackages:
   - lib/log
   - lib/metrics

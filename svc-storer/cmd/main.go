@@ -6,8 +6,8 @@ import (
 	_ "github.com/joho/godotenv/autoload"
 	"github.com/kelseyhightower/envconfig"
 
-	"github.com/luigi-riefolo/90poe/lib/log"
-	storer "github.com/luigi-riefolo/90poe/svc-storer/api"
+	"github.com/luigi-riefolo/nlp/lib/log"
+	storer "github.com/luigi-riefolo/nlp/svc-storer/api"
 )
 
 var (

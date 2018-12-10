@@ -1,4 +1,4 @@
-package: github.com/luigi-riefolo/90poe/svc-ingestor
+package: github.com/luigi-riefolo/nlp/svc-ingestor
 import:
 - package: github.com/gocarina/gocsv
 - package: github.com/golang/protobuf
@@ -20,7 +20,7 @@ import:
   - autoload
 - package: github.com/kelseyhightower/envconfig
   version: v1.3.0
-- package: github.com/luigi-riefolo/90poe
+- package: github.com/luigi-riefolo/nlp
   subpackages:
   - lib/log
   - lib/metrics

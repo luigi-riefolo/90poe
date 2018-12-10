@@ -49,7 +49,7 @@ imports:
   version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/konsorten/go-windows-terminal-sequences
   version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
-- name: github.com/luigi-riefolo/90poe
+- name: github.com/luigi-riefolo/nlp
   version: 4515bf7dd56c941b21596f96cc028b9e0b3e9f47
   subpackages:
   - lib/log

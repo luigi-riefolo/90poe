@@ -17,11 +17,11 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 
-	liblog "github.com/luigi-riefolo/90poe/lib/log"
-	"github.com/luigi-riefolo/90poe/lib/metrics"
-	"github.com/luigi-riefolo/90poe/lib/server"
-	"github.com/luigi-riefolo/90poe/svc-ingestor/pb"
-	storerpb "github.com/luigi-riefolo/90poe/svc-storer/pb"
+	liblog "github.com/luigi-riefolo/nlp/lib/log"
+	"github.com/luigi-riefolo/nlp/lib/metrics"
+	"github.com/luigi-riefolo/nlp/lib/server"
+	"github.com/luigi-riefolo/nlp/svc-ingestor/pb"
+	storerpb "github.com/luigi-riefolo/nlp/svc-storer/pb"
 )
 
 // TODO: test if connection is fine when storer not up

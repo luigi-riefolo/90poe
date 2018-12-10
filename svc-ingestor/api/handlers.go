@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/gocarina/gocsv"
-	"github.com/luigi-riefolo/90poe/svc-ingestor/pb"
-	storerpb "github.com/luigi-riefolo/90poe/svc-storer/pb"
+	"github.com/luigi-riefolo/nlp/svc-ingestor/pb"
+	storerpb "github.com/luigi-riefolo/nlp/svc-storer/pb"
 	"github.com/pkg/errors"
 	"github.com/ttacon/libphonenumber"
 )
