@@ -1,5 +1,5 @@
-hash: 2760920a6a5c6f7f7f629cab1f0f147e408638ba124ef873bcb058843a511cdb
-updated: 2018-12-09T15:49:39.073870399Z
+hash: b7160cb52e639a98519151531490d094a5e8124ab38a0ac23699b26b71b4a04b
+updated: 2018-12-10T12:45:07.833857354Z
 imports:
 - name: github.com/alecthomas/template
   version: a0175ee3bccc567396460bf5acd36800cb10c49c
@@ -49,6 +49,14 @@ imports:
   version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/konsorten/go-windows-terminal-sequences
   version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/luigi-riefolo/90poe
+  version: 2e29a58f43910316986020321913910b16a10356
+  subpackages:
+  - lib/log
+  - lib/metrics
+  - lib/server
+  - svc-ingestor/pb
+  - svc-storer/pb
 - name: github.com/luigi-riefolo/nlp
   version: 4515bf7dd56c941b21596f96cc028b9e0b3e9f47
   subpackages:

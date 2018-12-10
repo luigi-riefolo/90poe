@@ -1,5 +1,5 @@
-hash: ea783ce7b1e13c10c15a93f3c2bf94eb9075dcdf70ae6eea22fef4e2dac266c8
-updated: 2018-12-09T15:53:12.219368489Z
+hash: aacb58396eaf778238c0633627caa25ab27f05b4a357cd54c0c1c89bad1d6e8a
+updated: 2018-12-10T12:45:51.409830162Z
 imports:
 - name: github.com/alecthomas/template
   version: a0175ee3bccc567396460bf5acd36800cb10c49c
@@ -47,6 +47,10 @@ imports:
   version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/konsorten/go-windows-terminal-sequences
   version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/luigi-riefolo/90poe
+  version: 2e29a58f43910316986020321913910b16a10356
+  subpackages:
+  - lib/log
 - name: github.com/luigi-riefolo/nlp
   version: 4515bf7dd56c941b21596f96cc028b9e0b3e9f47
   subpackages:
